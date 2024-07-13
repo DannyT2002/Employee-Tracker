@@ -6,10 +6,11 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 const pool = new Pool({
-  user: 'your_username',
-  password: 'your_password',
+  user: '',
+  password: '',
   host: 'localhost',
-  database: 'employees_db'
+  database: 'employees_db',
+  port: '5432'
 });
 
 const mainMenu = () => {
